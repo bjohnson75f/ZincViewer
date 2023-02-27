@@ -1,7 +1,7 @@
 # Zinc Viewer
 Zinc viewer is a little java swing utility that will parse and display Zinc data formats in a Table type view.  Zinc is a format specified by Project Haystack.  You can learn more about Zinc at https://project-haystack.org/doc/docHaystack/Zinc.
 
-# Known Problems
+## Known Problems
 - The CSV parsing is a simple split on "," without regard to commas embedded within a text field.  It will NOT properly parse these fields currently.
 
 ## To add to IntelliJ

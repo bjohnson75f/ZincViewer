@@ -98,13 +98,13 @@ public class ZincV extends JFrame {
                 int colIdx = 0;
                 for(String col: line.split(",")) {
                     if ( shouldIncludeColumn(col)) {
-                        System.out.println("Adding column " + col);
+                        System.out.println(String.format("Adding column %s (%d)", col, colIdx));
                         model.addColumn(col);
                         modelIndexes.add(colIdx);
                         modelIndex++;
                         dataLen.add(col.length());
                     } else {
-                        System.out.println("Adding column " + col);
+                        System.out.println(String.format("Adding skip column %s (%d)", col, colIdx));
                         skipIndexes.add(colIdx);
                         modelIndexes.add(-1);
                         modelIndex++;
